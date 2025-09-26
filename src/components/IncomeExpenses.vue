@@ -1,0 +1,12 @@
+<template>
+    <div>
+        <div>
+            <h4>Entrada</h4>
+            <p>$+</p>
+        </div>
+        <div>
+            <h4>Saida</h4>
+            <p>$-</p>
+        </div>
+    </div>
+</template>

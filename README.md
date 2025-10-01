@@ -1,19 +1,19 @@
-##💰 MyWallet - Gerenciador de Finanças Pessoais (em desenvolvimento)
+## 💰 MyWallet - Gerenciador de Finanças Pessoais (em desenvolvimento)
 
 Um aplicativo de carteira digital desenvolvido em Vue 3, com Vuetify e Sass, que ajuda usuários a terem maior controle sobre suas finanças pessoais.
 
-##🚀 Sobre o projeto
+## 🚀 Sobre o projeto
 
 O MyWallet foi criado com o objetivo de auxiliar pessoas que têm dificuldade em gerenciar suas entradas e saídas de dinheiro, oferecendo uma forma simples e visual de acompanhar seus gastos e receitas.
 
-##Com ele, é possível:
+## Com ele, é possível:
 
 - Adicionar entradas (receitas) e saídas (despesas).
 - Consultar o histórico completo de movimentações.
 - Visualizar o saldo total da carteira.
 - (Em breve) Criar uma conta e salvar os dados de forma segura em uma API, permitindo que cada usuário acesse seu histórico mês a mês.
 
-##🛠️ Tecnologias utilizadas
+## 🛠️ Tecnologias utilizadas
 
 - Vue 3
 - Vuetify
@@ -21,7 +21,7 @@ O MyWallet foi criado com o objetivo de auxiliar pessoas que têm dificuldade em
 - LocalStorage (persistência local dos dados)
 - (Futuro) API própria para autenticação e armazenamento de dados.
 
-##📂 Funcionalidades
+## 📂 Funcionalidades
 
 - ✅ Cadastro de receitas e despesas
 - ✅ Histórico de movimentações

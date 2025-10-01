@@ -1,29 +1,32 @@
-## em desenvolvimento
+##💰 MyWallet - Gerenciador de Finanças Pessoais (em desenvolvimento)
 
-This template should help get you started developing with Vue 3 in Vite.
+Um aplicativo de carteira digital desenvolvido em Vue 3, com Vuetify e Sass, que ajuda usuários a terem maior controle sobre suas finanças pessoais.
 
-## Recommended IDE Setup
+##🚀 Sobre o projeto
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+O MyWallet foi criado com o objetivo de auxiliar pessoas que têm dificuldade em gerenciar suas entradas e saídas de dinheiro, oferecendo uma forma simples e visual de acompanhar seus gastos e receitas.
 
-## Customize configuration
+##Com ele, é possível:
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+- Adicionar entradas (receitas) e saídas (despesas).
+- Consultar o histórico completo de movimentações.
+- Visualizar o saldo total da carteira.
+- (Em breve) Criar uma conta e salvar os dados de forma segura em uma API, permitindo que cada usuário acesse seu histórico mês a mês.
 
-## Project Setup
+##🛠️ Tecnologias utilizadas
 
-```sh
-npm install
-```
+- Vue 3
+- Vuetify
+- Sass
+- LocalStorage (persistência local dos dados)
+- (Futuro) API própria para autenticação e armazenamento de dados.
 
-### Compile and Hot-Reload for Development
+##📂 Funcionalidades
 
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+- ✅ Cadastro de receitas e despesas
+- ✅ Histórico de movimentações
+- ✅ Cálculo automático do saldo total
+- ✅ Armazenamento local (LocalStorage)
+- 🔜 Cadastro de usuário e login
+- 🔜 Persistência dos dados em banco via API
+- 🔜 Relatórios mensais de entradas e saídas

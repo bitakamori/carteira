@@ -8,8 +8,7 @@
         <Header />
         <v-btn text to="/"> Saldo </v-btn>
         <v-btn to="/addTransaction"> Adiconar Transição </v-btn>
-        <v-img cover width="100%" height="30%" class="mt-2" src="/quote.png">
-        </v-img>
+        <v-img width="100%" height="30%" class="mt-2" src="/quote.png"> </v-img>
         <div class="pa-2">
           <TransactionList
             :transactions="transactions"
@@ -17,7 +16,7 @@
           />
         </div>
       </v-col>
-      <v-col>
+      <v-col class="ml-7 ml-sm-0 ma-md-6">
         <router-view
           :total="+total"
           :income="+income"

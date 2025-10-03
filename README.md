@@ -30,3 +30,6 @@ O MyWallet foi criado com o objetivo de auxiliar pessoas que têm dificuldade em
 - 🔜 Cadastro de usuário e login
 - 🔜 Persistência dos dados em banco via API
 - 🔜 Relatórios mensais de entradas e saídas
+
+<img width="1261" height="896" alt="image" src="https://github.com/user-attachments/assets/79b06512-4df4-482e-bafd-2f882a1eb3ee" />
+<img width="467" height="946" alt="image" src="https://github.com/user-attachments/assets/339959e3-1740-47ca-8136-da5ff1ede810" />

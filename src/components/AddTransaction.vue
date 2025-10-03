@@ -4,11 +4,11 @@
       <v-icon icon="library_add" color="green" class="mr-2 mt-1" />
       <h3>Adicionar transação</h3>
     </v-row>
-    <form class="px-sm-4" @submit.prevent>
+    <v-form ref="formRef" v-model="isFormValid" class="px-sm-4" @submit.prevent>
       <v-text-field
         v-model="amount"
         type="number"
-        :rules="[amountRules.required]"
+        :rules="[required]"
         label="Valor (R$)"
         placeholder="0,00"
         clearable
@@ -17,7 +17,7 @@
       <v-text-field
         v-model="description"
         type="text"
-        :rules="[descriptionRules.required]"
+        :rules="[required]"
         label="Descrição"
         placeholder="Ex: Salário, Aluguel, Compras.."
         clearable
@@ -45,37 +45,25 @@
           Adicionar Despesa
         </v-btn>
       </div>
-    </form>
+    </v-form>
   </div>
 </template>
 <script setup>
-import { ref, computed } from "vue";
+import { ref } from "vue";
 
 const description = ref("");
 const amount = ref("");
+const formRef = ref(null);
+const isFormValid = ref(false);
 
-const amountRules = {
-  required: (value) => !!value || "Adicione o valor da transação",
+const required = (v) => {
+  return !!v || "Preencha o campo acima";
 };
-
-const descriptionRules = {
-  required: (value) => !!value || "Adicione uma descrição para a transação",
-};
-
-const isFormValid = computed(() => {
-  return (
-    description.value.trim() !== "" &&
-    amount.value !== "" &&
-    parseFloat(amount.value) > 0
-  );
-});
 
 const emits = defineEmits(["transactionSubmitted"]);
 
 const onSubmit = (type) => {
-  if (!isFormValid.value) {
-    return;
-  }
+  if (!isFormValid.value) return;
 
   const transactionAmount = parseFloat(amount.value);
   const finalAmount =
@@ -90,7 +78,6 @@ const onSubmit = (type) => {
 
   emits("transactionSubmitted", transactionData);
 
-  description.value = "";
-  amount.value = "";
+  formRef.value?.reset();
 };
 </script>
